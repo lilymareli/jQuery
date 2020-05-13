@@ -5,6 +5,12 @@ if ($("button").hasClass("big-title")) {
   $("button").mouseover(function() {
     $("button").removeClass("big-title");
     $("h1").css("color", "purple");
+    setTimeout(function () {
+      $("button").addClass("big-title");
+    }, 1000);
+    setTimeout(function(){
+      $("h1").css("color", "black");
+    }, 1000);
   });
 }
 else {
